@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+; R3: Intel Indeo 3.2 (IR32_32.DLL, Version 3.24.15.3, aus VFW\IV32NT95.EXE der CD1)
+; nur fuer 32-Bit-Programme (WOW6432Node), DLL bleibt im Programmordner von ADDY.
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\Drivers32]
+"vidc.iv32"="C:\\COKTEL\\ADDY4\\IR32_32.DLL"

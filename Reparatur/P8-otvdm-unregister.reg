@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+; Macht P8 rueckgaengig (entfernt die otvdm-Umleitung fuer 16-Bit-Programme).
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NtVdm64\0OTVDM]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\NtVdm64\0OTVDM]

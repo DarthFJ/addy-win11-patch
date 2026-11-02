@@ -1,0 +1,18 @@
+Windows Registry Editor Version 5.00
+
+; P8: 16-Bit-Windows-Programme (z. B. ADDY-Minispiele wie Rocket Scrambler) an otvdm (winevdm v0.9.0) weiterleiten.
+; Entspricht install.inf von otvdm, aber mit festem Pfad C:\COKTEL\otvdm-v0.9.0\otvdmw.exe (ohne Konsolenfenster).
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NtVdm64\0OTVDM]
+"CommandLine"=" --ntvdm64: \"%m\" --ntvdm64-args: %c"
+"InternalName"="*"
+"ProductName"="*"
+"ProductVersion"="*"
+"MappedExeName"="C:\\COKTEL\\otvdm-v0.9.0\\otvdmw.exe"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\NtVdm64\0OTVDM]
+"CommandLine"=" --ntvdm64: \"%m\" --ntvdm64-args: %c"
+"InternalName"="*"
+"ProductName"="*"
+"ProductVersion"="*"
+"MappedExeName"="C:\\COKTEL\\otvdm-v0.9.0\\otvdmw.exe"

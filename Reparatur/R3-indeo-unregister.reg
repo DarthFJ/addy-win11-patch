@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+; Macht R3 rueckgaengig (entfernt nur den Eintrag vidc.iv32).
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows NT\CurrentVersion\Drivers32]
+"vidc.iv32"=-

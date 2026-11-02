@@ -1,0 +1,64 @@
+ADDY Deutsch Klasse 5+6 (Coktel, 1998) unter Windows 11
+=======================================================
+
+*** ACHTUNG: DIE MINISPIELE FUNKTIONIEREN NICHT. ***
+Dieser Patch macht nur die Lernsoftware selbst lauffaehig.
+
+Dieses Paket installiert ADDY von der Original-CD oder einem Image und wendet alle
+bekannten Korrekturen an. Die CDs und Images werden nicht veraendert. ADDY braucht
+zum Spielen weiterhin die CDs. Der Patch enthaelt keine Spieldateien.
+
+
+Installation
+------------
+Installieren.cmd starten. Der Patch sucht CD1 und CD2 zuerst in den Laufwerken, dann als
+Addy_Coll1 und Addy4_coll2 (.iso oder .cue) im Patch-Ordner und im Ordner darueber. Findet
+er sie nicht, fragt er nach dem Pfad. Oder direkt:
+
+  Installieren.cmd -Cd1Image "Pfad\Addy_Coll1.iso" -Cd2Image "Pfad\Addy4_coll2.iso"
+
+Moeglich sind .iso, .bin und .cue. Windows fragt einmal nach Administratorrechten
+(Indeo-Codec, otvdm). Ein vorhandener Ordner C:\COKTEL\ADDY4 wird nicht ueberschrieben.
+
+Weitere Angaben: -Dest Zielordner, -OtvdmPath Ordner, -RestoreProfile Sicherungsordner.
+Das Protokoll steht in ADDY-Patch.log im Programmordner.
+
+
+Spielen
+-------
+Vorher CD1, CD2 und CD3 einlegen oder als Image einbinden, dann die Verknuepfung ADDY 4
+auf dem Desktop oder im Startmenue (COKTEL) starten. Die Klassenwahl wird mit der
+Eingabetaste bestaetigt.
+
+
+Deinstallation
+--------------
+Uninstall.exe im Programmordner oder Deinstallieren.cmd starten. Der Spielstand wird nach
+Dokumente\Addy\Sicherung_Profil_... gesichert, dann werden der Programmordner, die
+Verknuepfungen und alle Eintraege entfernt. CDs, Images und der otvdm-Ordner bleiben erhalten.
+
+
+Probleme
+--------
+Nur kurz schwarzer Bildschirm beim Start:
+  ADDY wurde nicht sauber beendet oder laeuft noch unsichtbar. Im Task-Manager ADI4.EXE
+  beenden und sich einmal bei Windows ab- und wieder anmelden.
+
+Kein Ton:
+  In den Windows-Einstellungen unter System > Sound > Lautstaerkemixer den Regler von
+  ADDY pruefen.
+
+Minispiele:
+  Die Minispiele funktionieren nicht und sind nicht geprueft. Einzelne Spiele koennen
+  starten, laufen aber eventuell zu schnell oder haengen. Break Time beendet sich sofort.
+  16-Bit-Spiele brauchen ausserdem otvdm.
+
+
+Korrekturen an ADI4.EXE
+-----------------------
+P1   Division durch null bei der CD-Messung
+P2   Endlosschleife beim Start
+P6   eingefrorene Animationen
+P7   Bildreste nach P6
+P10  Lautstaerke: Start mit 100 %, kein Zurueckschreiben beim Beenden
+Das Original bleibt als ADI4.EXE.orig im Programmordner.
